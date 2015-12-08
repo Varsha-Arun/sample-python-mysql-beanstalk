@@ -12,6 +12,8 @@ env:
 before_install:
   - SUDO=$(which sudo) && $SUDO pip install awsebcli
 
+build_image: drydock/u14pytpls:tip
+
 install:
   - pip install -r requirements.txt
 
